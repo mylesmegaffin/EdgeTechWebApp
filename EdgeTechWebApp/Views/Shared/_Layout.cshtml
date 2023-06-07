@@ -6,10 +6,14 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans&family=Secular+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <img class="bg-img navbar-fixed-top" src="~/Images/backgroundWood.jpg" />
+    <div class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,17 +29,23 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li><a href="/Reviews">Reviews</a></li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.Partial("_LoginPartial")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="siteFooter">
+            <p>&copy; @DateTime.Now.Year - EDGETECH Quality Woodworking</p>
+            <address>
+                One Microsoft Way<br />
+                Redmond, WA 98052-6399<br />
+                <abbr title="Phone">P:</abbr>
+                425.555.0100
+            </address>
+            <strong>Contact:</strong>   <a href="mailto:edgetechqualitywoodworking@gmail.com">EdgetechQualityWoodworking@gmail.com</a><br />
         </footer>
     </div>
 

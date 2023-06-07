@@ -1,13 +1,112 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* VARIABLES */
+:root {
+    /* COLOURS */
+    --TEXTCOLOUR: #fffff0;
+    --COLOUR1: #f6f6dc;
+    --COLOUR2: #c2b19c;
+    --GREEN: #5d7772;
+    --COLOUR4: #473c38;
+    --COLOUR5: #7b2c2d;
+    --FFLOGO: 'Anton', sans-serif;
+    --FFHEADINGS: 'Secular One', sans-serif;
+    --FFREADABLE: 'Instrument Sans', sans-serif;
+}
+* {
+    color: var(--COLOUR4);
+    font-family: var(--FFREADABLE);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--FFHEADINGS);
+}
+.navbar-nav {
+    float: right;
+}
+
+.bg-img {
+    margin-top: -93vh;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.icon-bar{
+    background-color: var(--TEXTCOLOUR);
+}
+.nav > li > a,
+.navbar-header > a {
+    color: var(--TEXTCOLOUR);
+    font-family: var(--FFHEADINGS);
+}
+.navbar-header > a {
+    font-family: var(--FFLOGO);
+}
+.nav > li > a:hover,
+.nav > li > a:focus,
+.navbar-header > a:hover{
+    background-color: rgb(246 246 220 / 0.10);
+    border-radius: 30px;
+    color: var(--GREEN);
+}
+.reviewHeader {
+    text-shadow: 3px 3px 4px var(--COLOUR2);
+    text-align: center;
+}
+
+.php{
+    width: 35%;
+    
+}
+
+.php > img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+.body-content {
+    min-height: 80vh;
+
+}
+body {
+    margin-top: 10vh;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: var(--COLOUR1);
+}
+.gallery {
+    padding-right: 60px;
+    padding-left: -70px;
+    padding-top: 50px;
+    border-radius: 20px;
+    background-color: var(--COLOUR2);
+    box-shadow: 12px 12px 2px 1px var(--COLOUR4);
+}
+.img-fluid, img-thumbnail {
+    margin: 30px;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
+.cardText {
+    color: var(--COLOUR4)
+}
+.blockquote-custom {
+    position: relative;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: VAR(--TEXTCOLOUR);
+    box-shadow: 12px 12px 2px 1px var(--COLOUR2);
+    margin-top: 15px;
+}
+
+
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -21,4 +120,22 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+.siteFooter {
+    position: sticky;
+    top: 100%;
+    margin-top: 20vh;
+}
+footer {
+    position: sticky;
+    top: 100%;
+}
+footer > a{
+    color: var(--COLOUR4);
+}
+footer > a:hover,
+footer > a:focus {
+    background-color: rgb(246 246 220 / 0.10);
+    border-radius: 30px;
+    color: var(--GREEN);
 }
