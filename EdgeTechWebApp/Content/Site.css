@@ -118,8 +118,9 @@ body {
     .navlink-background {
         background-color: rgb(0 0 0 / 0.41);
         position: absolute;
-        top: 50px;
+        top: 0px;
         width: 100vw;
+        padding-top: 50px;
     }
     
 
