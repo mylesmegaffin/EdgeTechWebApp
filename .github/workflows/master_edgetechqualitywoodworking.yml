@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'EdgetechQualityWoodworking'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2A89E7E945740B2A546AE2C5CABA157 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E086CE6831441A688B964384A940AA9 }}
           package: .
