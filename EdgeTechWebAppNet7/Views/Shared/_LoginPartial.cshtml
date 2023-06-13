@@ -1,0 +1,16 @@
+@using Microsoft.AspNet.Identity
+@*@Styles.Render("~/Content/css")*@
+@if (Request.IsAuthenticated)
+{
+    <li class="account-links">
+        @* "" + User.Identity.GetUserName() + "" *@
+        @Html.ActionLink("Account", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+    </li>
+}
+
+else
+{
+        <!--<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>-->
+        <li class="account-links">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+}
+
