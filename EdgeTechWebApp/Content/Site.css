@@ -15,6 +15,9 @@
     color: var(--COLOUR4);
     font-family: var(--FFREADABLE);
 }
+.about-text{
+    font-size: 18px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--FFHEADINGS);
